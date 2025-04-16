@@ -1,6 +1,0 @@
-./**/*
-!./*.json
-!src/*
-!tests/*
-!workdocs/*
-!./.npmrc

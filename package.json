@@ -1,7 +1,7 @@
 {
   "name": "styled-string",
   "version": "1.0.0",
-  "description": "template for ts projects",
+  "description": "String Styler class based on a builder sedign pattern",
   "type": "module",
   "exports": {
     "require": "./lib/index.cjs",
@@ -17,8 +17,7 @@
     "build": "rimraf ./lib && rimraf ./dist && gulp dev",
     "build:prod": "rimraf ./lib && rimraf ./dist && gulp prod",
     "test": "jest --testPathPattern=\"/tests/unit\" --passWithNoTests --detectOpenHandles",
-    "test:integration": "jest --testPathPattern=\"/tests/(integration)\" --passWithNoTests --detectOpenHandles",
-    "test:all": "jest --testPathPattern=\"/tests/(unit|integration)\" --passWithNoTests --detectOpenHandles",
+    "test:all": "jest --testPathPattern=\"/tests/(unit|bundling)\" --passWithNoTests --detectOpenHandles",
     "coverage": "rimraf ./workdocs/reports/data/*.json && npm run test:all -- --coverage --config=./workdocs/reports/jest.report.config.ts && cd workdocs/reports && jest-coverage-badges",
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
@@ -67,9 +66,9 @@
   "author": "Tiago Venceslau",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/decaf-ts/ts-workspace/issues"
+    "url": "https://github.com/decaf-ts/styled-string/issues"
   },
-  "homepage": "https://github.com/decaf-ts/ts-workspace#readme",
+  "homepage": "https://github.com/decaf-ts/styled-string#readme",
   "devDependencies": {
     "@eslint/js": "^9.24.0",
     "@stylistic/eslint-plugin": "^4.2.0",

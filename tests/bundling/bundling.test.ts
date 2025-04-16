@@ -1,4 +1,3 @@
-import { VERSION } from "../../src";
 
 describe("Distribution Tests", () => {
   it("reads lib", () => {
@@ -17,7 +16,7 @@ describe("Distribution Tests", () => {
       VERSION,
       complexFunction,
       ChildClass,
-    } = require("../../dist/ts-workspace.bundle.min.js");
+    } = require("../../dist/styled-string.bundle.min.js");
     expect(VERSION).toBeDefined();
     expect(complexFunction).toBeDefined();
     expect(ChildClass).toBeDefined();

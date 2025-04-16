@@ -18,8 +18,8 @@ to abide by its terms.
 ### Bootstrapping the project
 
 ```bash
-git clone https://github.com/decaf-ts/ts-workspace.git
-cd ts-workspace
+git clone https://github.com/TiagoVenceslau/styled-string.git
+cd styled-string
 npm install
 npm run build
 ```
