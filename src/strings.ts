@@ -66,8 +66,6 @@ export type ColorizeOptions = {
  * 
  * @implements {ColorizeOptions}
  * @param {string} text - The initial text string to be styled.
- * 
- * @memberOf module:StyledString
  */
 export class StyledString implements ColorizeOptions {
   /**

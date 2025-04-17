@@ -2,7 +2,7 @@
 
 ## Styled String
 
-This repository is meant the provide an easy (Builder like) way to style Strings according to the ANSI format in javascript.
+This repository is meant the provide an easy (Builder like) way to style Strings in javascript.
 
 
 ![Licence](https://img.shields.io/github/license/TiagoVenceslau/styled-string.svg?style=plastic)
@@ -31,3 +31,5 @@ This repository is meant the provide an easy (Builder like) way to style Strings
 
 ![Node Version](https://img.shields.io/badge/dynamic/json.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbadges%2Fshields%2Fmaster%2Fpackage.json&label=Node&query=$.engines.node&colorB=blue)
 ![NPM Version](https://img.shields.io/badge/dynamic/json.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbadges%2Fshields%2Fmaster%2Fpackage.json&label=NPM&query=$.engines.npm&colorB=purple)
+
+Documentation can be found [here!](https://tiagovenceslau.github.io/styled-string/)

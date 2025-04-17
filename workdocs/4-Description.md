@@ -11,10 +11,13 @@ import { style } from 'styled-string';
 
 const styledText = style('Hello, World!').red.bold;
 console.log(styledText.toString());
+console.log(styledText.text);
 ```
 Result: 
  - <span style="color: red; font-weight: bold;">Hello, World!</span>
+ - <span style="color: red; font-weight: bold;">Hello, World!</span>
 
+***Note:*** using `.toString()` or `.text` are equivalent.
 
 #### Foreground Colors
 ```typescript
@@ -159,7 +162,52 @@ Result:
 - <span style="color: red; font-weight: bold;">R</span><span style="color: yellow; font-style: italic;">a</span><span style="color: green; text-decoration: underline;">i</span><span style="color: black; background-color: cyan;">n</span><span style="color: blue; opacity: 0.5;">b</span><span style="color: magenta; text-decoration: line-through;">o</span><span style="color: white; background-color: red;">w</span>
 - <span style="color: #ff0000; background-color: #121212; font-weight: bold;">Gradient</span><span style="color: rgb(100, 150, 200); background-color: rgb(50, 75, 100); font-style: italic; text-decoration: underline;"> Text</span>
 
+### Examples of Color Functions
+
+#### colorizeANSI
+
+```typescript
+import { colorizeANSI } from 'styled-string';
+
+console.log(colorizeANSI('Red text', 31));
+console.log(colorizeANSI('Blue background', 44, true));
+```
+Result:
+ - <span style="color: red;">Red text</span>
+ - <span style="background-color: blue;">Blue background</span>
+
+#### colorize256
+
+```typescript
+import { colorize256 } from 'styled-string';
+
+console.log(colorize256('Orange text', 208));
+console.log(colorize256('Teal background', 30, true));
+```
+Result:
+ - <span style="color: #ff8700;">Orange text</span>
+ - <span style="background-color: #008787;">Teal background</span>
+
+#### colorizeRGB
+
+```typescript
+import { colorizeRGB } from 'styled-string';
+
+console.log(colorizeRGB('Custom color text', 100, 150, 200));
+console.log(colorizeRGB('Custom background', 50, 75, 100, true));
+```
+Result:
+ - <span style="color: rgb(100, 150, 200);">Custom color text</span>
+ - <span style="background-color: rgb(50, 75, 100);">Custom background</span>
+
+```typescript
+import { applyStyle } from 'styled-string';
+
+console.log(applyStyle('Bold text', 'bold'));
+console.log(applyStyle('Underlined text', 'underline'));
+```
+Result:
+ - <span style="font-weight: bold;">Bold text</span>
+ - <span style="text-decoration: underline;">Underlined text</span>
+
 By developers, [for developers](./tutorials/For%20Developers.md).
-
-
-

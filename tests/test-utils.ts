@@ -85,8 +85,6 @@ export async function addReportMessage(title: string, message: string | object):
  * @param {string} title - The title of the attachment
  * @param {string | Buffer} message - The content of the attachment, either as a string or a Buffer
  * @return {Promise<void>} A Promise that resolves when the attachment has been added to the report
- * 
- * @memberOf module:TestUtils
  */
 export async function addReportAttachment(title: string, message: string | Buffer): Promise<void> {
   if (!addAttachFunction) await importHelpers();

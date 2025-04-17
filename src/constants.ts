@@ -3,7 +3,7 @@
  * @description ANSI escape code for resetting text formatting.
  * @summary This constant holds the ANSI escape sequence used to reset all text formatting to default.
  * @const AnsiReset
- * @memberOf module:@asdasdasd/utils
+ * @memberOf module:StyledString
  */
 export const AnsiReset = "\x1b[0m";
 
@@ -19,7 +19,7 @@ export const AnsiReset = "\x1b[0m";
  * @property {number} magenta - ANSI code for magenta text (35).
  * @property {number} cyan - ANSI code for cyan text (36).
  * @property {number} white - ANSI code for white text (37).
- * @memberOf module:@asdasdasd/utils
+ * @memberOf module:StyledString
  */
 export const StandardForegroundColors = {
   black: 30,
@@ -44,7 +44,7 @@ export const StandardForegroundColors = {
  * @property {number} magenta - ANSI code for bright magenta text (95).
  * @property {number} cyan - ANSI code for bright cyan text (96).
  * @property {number} white - ANSI code for bright white text (97).
- * @memberOf module:@asdasdasd/utils
+ * @memberOf module:@StyledString
  */
 export const BrightForegroundColors = {
   brightBlack: 90,
@@ -69,7 +69,7 @@ export const BrightForegroundColors = {
  * @property {number} bgMagenta - ANSI code for magenta background (45).
  * @property {number} bgCyan - ANSI code for cyan background (46).
  * @property {number} bgWhite - ANSI code for white background (47).
- * @memberOf module:@asdasdasd/utils
+ * @memberOf module:@StyledString
  */
 export const StandardBackgroundColors = {
   bgBlack: 40,
@@ -94,7 +94,7 @@ export const StandardBackgroundColors = {
  * @property {number} bgBrightMagenta - ANSI code for bright magenta background (105).
  * @property {number} bgBrightCyan - ANSI code for bright cyan background (106).
  * @property {number} bgBrightWhite - ANSI code for bright white background (107).
- * @memberOf module:@asdasdasd/utils
+ * @memberOf module:@StyledString
  */
 export const BrightBackgroundColors = {
   bgBrightBlack: 100,
@@ -128,7 +128,7 @@ export const BrightBackgroundColors = {
  * @property {number} noInverse - ANSI code to turn off inverse (27).
  * @property {number} noHidden - ANSI code to turn off hidden (28).
  * @property {number} noStrikethrough - ANSI code to turn off strikethrough (29).
- * @memberOf module:@asdasdasd/utils
+ * @memberOf module:@StyledString
  */
 export const styles = {
   reset: 0,

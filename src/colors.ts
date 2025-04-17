@@ -13,7 +13,7 @@ import { AnsiReset, styles } from "./constants";
  * @return {string} The text wrapped in ANSI color codes.
  *
  * @function colorizeANSI
- * @memberOf module:@asdasdasd/utils
+ * @memberOf module:@StyledString
  */
 export function colorizeANSI(text: string, n: number, bg = false) {
 
@@ -42,7 +42,7 @@ export function colorizeANSI(text: string, n: number, bg = false) {
  * @return {string} The text wrapped in ANSI color codes.
  *
  * @function colorize256
- * @memberOf module:@asdasdasd/utils
+ * @memberOf module:@StyledString
  */
 export function colorize256(text: string, n: number, bg = false) {
 
@@ -70,7 +70,7 @@ export function colorize256(text: string, n: number, bg = false) {
  * @return {string} The text wrapped in ANSI color codes.
  *
  * @function colorizeRGB
- * @memberOf module:@asdasdasd/utils
+ * @memberOf module:StyledString
  */
 export function colorizeRGB(text: string, r: number, g: number, b: number, bg = false) {
   if (isNaN(r) || isNaN(g) || isNaN(b)){
@@ -94,7 +94,7 @@ export function colorizeRGB(text: string, r: number, g: number, b: number, bg = 
  * @return {string} The text wrapped in ANSI style codes.
  *
  * @function applyStyle
- * @memberOf module:@asdasdasd/utils
+ * @memberOf module:StyledString
  */
 export function applyStyle(text: string, n: number | keyof typeof styles): string {
   const styleCode = typeof n === "number" ? n : styles[n];
@@ -111,11 +111,11 @@ export function applyStyle(text: string, n: number | keyof typeof styles): strin
  * @return {string} The input text with all ANSI formatting codes removed.
  *
  * @function clear
- * @memberOf module:@asdasdasd/utils
+ * @memberOf module:StyledString
  */
 export function clear(text: string): string {
   // Regular expression to match ANSI escape codes
-  const ansiRegex = /\\x1B\[[0-9;]*[JKmsu]/g;
+  const ansiRegex = /\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])/g;
   return text.replace(ansiRegex, '');
 }
 
@@ -130,7 +130,7 @@ export function clear(text: string): string {
  * @return {string} The text wrapped in the raw ANSI code and the reset code.
  *
  * @function raw
- * @memberOf module:@asdasdasd/utils
+ * @memberOf module:StyledString
  */
 export function raw(text: string, raw: string): string {
   return `${raw}${text}${AnsiReset}`;
