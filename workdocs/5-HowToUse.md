@@ -2,7 +2,7 @@
 
 - [Initial Setup](./tutorials/For%20Developers.md#_initial-setup_)
 - [Installation](./tutorials/For%20Developers.md#installation)
-- 
+
 #### Basic Usage
 ```typescript
 import { style } from 'styled-string';
@@ -207,3 +207,7 @@ console.log(applyStyle('Underlined text', 'underline'));
 Result:
 - <span style="font-weight: bold;">Bold text</span>
 - <span style="text-decoration: underline;">Underlined text</span>
+
+### ANSI color codes
+
+![table with ansi color codes](./assets/ansi.png "ansi color codes")

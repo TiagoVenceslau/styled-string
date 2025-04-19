@@ -32,7 +32,7 @@
       "useLongnameInNav": false
     },
     "better-docs": {
-      "name": "ts-template",
+      "name": "Styled String",
       "title": "TypeScript workspace template",
       "hideGenerator": true,
       "useLongnameInNav": false,
@@ -47,11 +47,11 @@
         },
         {
           "label": "Github Repository",
-          "href": "https://github.com/decaf-ts/ts-workspace#readme"
+          "href": "https://github.com/TiagoVenceslau/styled-string#readme"
         },
         {
           "label": "Github Profile",
-          "href": "https://github.com/decaf-ts"
+          "href": "https://github.com/TiagoVenceslau"
         }
       ]
     },
