@@ -1,7 +1,7 @@
 {
-  "name": "styled-string",
+  "name": "@tvenceslau/styled-string",
   "version": "1.0.3",
-  "description": "String Styler class based on a builder sedign pattern",
+  "description": "String Styler class based on a builder design pattern",
   "type": "module",
   "exports": {
     "require": "./lib/index.cjs",
