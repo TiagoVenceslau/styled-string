@@ -363,12 +363,13 @@ export class StyledString implements ColorizeOptions {
   noStrikethrough!: StyledString;
 
   /**
-   *
-   * @description Creates a new StyledString instance.
-   * @summary Initializes a StyledString with the given text and sets up getter methods for various color and style options.
-   * @param {string} text - The initial text string to be styled.
+   * @description The text
+   * @summary The styled text as a regular string.
    */
-  constructor(public text: string) {
+  text!: string;
+
+  constructor(text: string) {
+    this.text = text;
     // Basic colors
     Object.entries(StandardForegroundColors).forEach(([name, code]) => {
       Object.defineProperty(this, name, {
