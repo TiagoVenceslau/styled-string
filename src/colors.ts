@@ -90,7 +90,7 @@ export function colorizeRGB(text: string, r: number, g: number, b: number, bg = 
  * and returns the text wrapped in the appropriate ANSI escape codes for that style.
  *
  * @param {string} text - The text to be styled.
- * @param {number | keyof typeof styles} n - The style code or style name.
+ * @param {number | string} n - The style code or style name.
  * @return {string} The text wrapped in ANSI style codes.
  *
  * @function applyStyle
@@ -116,7 +116,7 @@ export function applyStyle(text: string, n: number | keyof typeof styles): strin
 export function clear(text: string): string {
   // Regular expression to match ANSI escape codes
   const ansiRegex = /\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])/g;
-  return text.replace(ansiRegex, '');
+  return text.replace(ansiRegex, '').trim();
 }
 
 /**

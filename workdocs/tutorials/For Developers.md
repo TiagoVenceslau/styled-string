@@ -186,7 +186,7 @@ styled-string
 │   │   └───data                    <-- folder used as temp while genrating reports wiht attachements
 │   │   └───html                    <-- test results (jest-html-reporters) complete test report with attachements
 │   │   └───junit                   <-- test results (junit xml)
-│   │   └───jest.report.config.ts   <-- jest config for exporting test results
+│   │   └───jest.coverage.config.ts   <-- jest config for exporting test results
 │   │───resources                   <-- Folder storing generated content (compiled uml, drawio, etc)
 │   │───tutorials                   <-- Tutorial folder (will show up on tutorial section in generated documentation)
 │   │───uml                         <-- folder containing puml files to be compiled along with the documentation

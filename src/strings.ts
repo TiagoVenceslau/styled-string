@@ -26,14 +26,14 @@ import {
  * @property {StyledString} BrightBackgroundColors Getter for each bright background color.
  * @property {StyledString} styles Getter for each text style.
  * @property {function(): StyledString} clear Removes all styling from the text.
- * @property {function(raw: string): StyledString} raw Applies raw ANSI codes to the text.
- * @property {function(n: number): StyledString} foreground Applies a foreground color using ANSI codes.
- * @property {function(n: number): StyledString} background Applies a background color using ANSI codes.
- * @property {function(n: number | keyof typeof styles): StyledString} style Applies a text style using ANSI codes.
- * @property {function(n: number): StyledString} color256 Applies a 256-color foreground color.
- * @property {function(n: number): StyledString} bgColor256 Applies a 256-color background color.
- * @property {function(r: number, g: number, b: number): StyledString} rgb Applies an RGB foreground color.
- * @property {function(r: number, g: number, b: number): StyledString} bgRgb Applies an RGB background color.
+ * @property {function(string): StyledString} raw Applies raw ANSI codes to the text.
+ * @property {function(number): StyledString} foreground Applies a foreground color using ANSI codes.
+ * @property {function(number): StyledString} background Applies a background color using ANSI codes.
+ * @property {function(string): StyledString} style Applies a text style using ANSI codes.
+ * @property {function(number): StyledString} color256 Applies a 256-color foreground color.
+ * @property {function(number): StyledString} bgColor256 Applies a 256-color background color.
+ * @property {function(number, number, number): StyledString} rgb Applies an RGB foreground color.
+ * @property {function(number, number, number): StyledString} bgRgb Applies an RGB background color.
  * @property {string} text The underlying text content.
  *
  * @memberOf module:StyledString
@@ -449,7 +449,7 @@ export class StyledString implements ColorizeOptions {
   /**
    * @description Applies a text style to the string.
    * @summary Sets text styles such as bold, italic, or underline using ANSI style codes.
-   * @param {number | keyof typeof styles} n - The style code or key from the styles object.
+   * @param {number | string} n - The style code or key from the styles object.
    * @return {StyledString} The StyledString instance with the style applied.
    */
   style(n: number | keyof typeof styles): StyledString {
@@ -531,7 +531,7 @@ export class StyledString implements ColorizeOptions {
  *
  * @function style
  *
- * @memberOf module:@asdasdasd/utils
+ * @memberOf StyledString
  */
 export function style(...t: string[]): StyledString {
   return new StyledString(t.join(" "));
