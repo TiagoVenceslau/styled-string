@@ -6,7 +6,7 @@
 [![Build & Test](https://github.com/TiagoVenceslau/styled-string/actions/workflows/nodejs-build-prod.yaml/badge.svg)](https://github.com/TiagoVenceslau/styled-string/actions/workflows/nodejs-build-prod.yaml)
 [![CodeQL](https://github.com/TiagoVenceslau/styled-string/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/TiagoVenceslau/styled-string/actions/workflows/codeql-analysis.yml)
 [![Pages builder](https://github.com/TiagoVenceslau/styled-string/actions/workflows/pages.yaml/badge.svg)](https://github.com/TiagoVenceslau/styled-string/actions/workflows/pages.yaml)
-[![.github/workflows/release-on-tag.yaml](https://github.com/TiagoVenceslau/styled-string/actions/workflows/release-on-tag.yaml/badge.svg?event=release)](https://github.com/TiagoVenceslau/styled-string/actions/workflows/release-on-tag.yaml)
+[![Release](https://github.com/TiagoVenceslau/styled-string/actions/workflows/release-on-tag.yaml/badge.svg?event=release)](https://github.com/TiagoVenceslau/styled-string/actions/workflows/release-on-tag.yaml)
 
 ![Open Issues](https://img.shields.io/github/issues/TiagoVenceslau/styled-string.svg)
 ![Closed Issues](https://img.shields.io/github/issues-closed/TiagoVenceslau/styled-string.svg)
