@@ -115,8 +115,9 @@ export function applyStyle(text: string, n: number | keyof typeof styles): strin
  */
 export function clear(text: string): string {
   // Regular expression to match ANSI escape codes
+  // eslint-disable-next-line no-control-regex
   const ansiRegex = /\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])/g;
-  return text.replace(ansiRegex, '').trim();
+  return text.replace(ansiRegex, '');
 }
 
 /**
