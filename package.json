@@ -1,6 +1,6 @@
 {
   "name": "styled-string",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "String Styler class based on a builder sedign pattern",
   "type": "module",
   "exports": {
