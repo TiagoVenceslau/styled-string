@@ -3,34 +3,28 @@
 This repository is meant the provide an easy (Builder like) way to style Strings in javascript.
 
 
-![Licence](https://img.shields.io/github/license/TiagoVenceslau/styled-string.svg?style=plastic)
-![GitHub language count](https://img.shields.io/github/languages/count/TiagoVenceslau/styled-string?style=plastic)
-![GitHub top language](https://img.shields.io/github/languages/top/TiagoVenceslau/styled-string?style=plastic)
+![Licence](https://img.shields.io/github/license/TiagoVenceslau/styled-string-builder.svg?style=plastic)
+![GitHub language count](https://img.shields.io/github/languages/count/TiagoVenceslau/styled-string-builder?style=plastic)
+![GitHub top language](https://img.shields.io/github/languages/top/TiagoVenceslau/styled-string-builder?style=plastic)
 
-[![Build & Test](https://github.com/TiagoVenceslau/styled-string/actions/workflows/nodejs-build-prod.yaml/badge.svg)](https://github.com/TiagoVenceslau/styled-string/actions/workflows/nodejs-build-prod.yaml)
-[![CodeQL](https://github.com/TiagoVenceslau/styled-string/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/TiagoVenceslau/styled-string/actions/workflows/codeql-analysis.yml)[![Snyk Analysis](https://github.com/TiagoVenceslau/styled-string/actions/workflows/snyk-analysis.yaml/badge.svg)](https://github.com/TiagoVenceslau/styled-string/actions/workflows/snyk-analysis.yaml)
-[![Pages builder](https://github.com/TiagoVenceslau/styled-string/actions/workflows/pages.yaml/badge.svg)](https://github.com/TiagoVenceslau/styled-string/actions/workflows/pages.yaml)
-[![.github/workflows/release-on-tag.yaml](https://github.com/TiagoVenceslau/styled-string/actions/workflows/release-on-tag.yaml/badge.svg?event=release)](https://github.com/TiagoVenceslau/styled-string/actions/workflows/release-on-tag.yaml)
+[![Build & Test](https://github.com/TiagoVenceslau/styled-string-builder/actions/workflows/nodejs-build-prod.yaml/badge.svg)](https://github.com/TiagoVenceslau/styled-string-builder/actions/workflows/nodejs-build-prod.yaml)
+[![CodeQL](https://github.com/TiagoVenceslau/styled-string-builder/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/TiagoVenceslau/styled-string-builder/actions/workflows/codeql-analysis.yml)
+[![Pages builder](https://github.com/TiagoVenceslau/styled-string-builder/actions/workflows/pages.yaml/badge.svg)](https://github.com/TiagoVenceslau/styled-string-builder/actions/workflows/pages.yaml)
+[![.github/workflows/release-on-tag.yaml](https://github.com/TiagoVenceslau/styled-string-builder/actions/workflows/release-on-tag.yaml/badge.svg?event=release)](https://github.com/TiagoVenceslau/styled-string-builder/actions/workflows/release-on-tag.yaml)
 
-![Open Issues](https://img.shields.io/github/issues/TiagoVenceslau/styled-string.svg)
-![Closed Issues](https://img.shields.io/github/issues-closed/TiagoVenceslau/styled-string.svg)
-![Pull Requests](https://img.shields.io/github/issues-pr-closed/TiagoVenceslau/styled-string.svg)
+![Open Issues](https://img.shields.io/github/issues/TiagoVenceslau/styled-string-builder.svg)
+![Closed Issues](https://img.shields.io/github/issues-closed/TiagoVenceslau/styled-string-builder.svg)
+![Pull Requests](https://img.shields.io/github/issues-pr-closed/TiagoVenceslau/styled-string-builder.svg)
 ![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
-![Line Coverage](workdocs/reports/coverage/badge-lines.svg)
-![Function Coverage](workdocs/reports/coverage/badge-functions.svg)
-![Statement Coverage](workdocs/reports/coverage/badge-statements.svg)
-![Branch Coverage](workdocs/reports/coverage/badge-branches.svg)
-
-
-![Forks](https://img.shields.io/github/forks/TiagoVenceslau/styled-string.svg)
-![Stars](https://img.shields.io/github/stars/TiagoVenceslau/styled-string.svg)
-![Watchers](https://img.shields.io/github/watchers/TiagoVenceslau/styled-string.svg)
+![Forks](https://img.shields.io/github/forks/TiagoVenceslau/styled-string-builder.svg)
+![Stars](https://img.shields.io/github/stars/TiagoVenceslau/styled-string-builder.svg)
+![Watchers](https://img.shields.io/github/watchers/TiagoVenceslau/styled-string-builder.svg)
 
 ![Node Version](https://img.shields.io/badge/dynamic/json.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbadges%2Fshields%2Fmaster%2Fpackage.json&label=Node&query=$.engines.node&colorB=blue)
 ![NPM Version](https://img.shields.io/badge/dynamic/json.svg?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbadges%2Fshields%2Fmaster%2Fpackage.json&label=NPM&query=$.engines.npm&colorB=purple)
 
-Documentation available [here](https://TiagoVenceslau.github.io/styled-string/)
+Documentation available [here](https://TiagoVenceslau.github.io/styled-string-builder/)
 
 ### Description
 
@@ -45,7 +39,7 @@ minimizing boilerplate to the minimum.
 
 #### Basic Usage
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 
 const styledText = style('Hello, World!').red.bold;
 console.log(styledText.toString());
@@ -59,7 +53,7 @@ Result:
 
 #### Foreground Colors
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 
 console.log(style('Red text').red.toString());
 console.log(style('Green text').green.toString());
@@ -73,7 +67,7 @@ Result:
 
 #### Background Colors
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 console.log(style('Red background').bgRed.toString());
 console.log(style('Green background').bgGreen.toString());
 console.log(style('Blue background').bgBlue.toString());
@@ -86,7 +80,7 @@ Result:
 
 #### Bright Colors
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 console.log(style('Bright red text').brightRed.toString());
 console.log(style('Bright green background').bgBrightGreen.toString());
 ```
@@ -97,7 +91,7 @@ Result:
 
 #### Styles
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 console.log(style('Bold text').bold.toString());
 console.log(style('Italic text').italic.toString());
 console.log(style('Underlined text').underline.toString());
@@ -112,7 +106,7 @@ Result:
 
 #### 256 Color
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 console.log(style('256 color text').color256(100).toString());
 console.log(style('256 color background').bgColor256(200).toString());
 ```
@@ -123,7 +117,7 @@ Result:
 
 #### RGB Color
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 console.log(style('RGB text').rgb(255, 100, 0).toString());
 console.log(style('RGB background').bgRgb(0, 100, 255).toString());
 ```
@@ -134,7 +128,7 @@ Result:
 
 #### Clear Styling
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 const styledText = style('Styled text').red.bold;
 console.log(styledText.clear().toString());
 ```
@@ -144,7 +138,7 @@ Result:
 
 #### Raw ANSI
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 console.log(style('Custom ANSI').raw('\u001b[35m').toString());
 ```
 Result:
@@ -153,7 +147,7 @@ Result:
 
 #### Combinations
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 // Combining multiple strings
 const combinedText = style('Hello').red.toString() + ' ' + style('World').blue.toString();
 console.log(combinedText);
@@ -205,7 +199,7 @@ Result:
 #### colorizeANSI
 
 ```typescript
-import { colorizeANSI } from 'styled-string';
+import { colorizeANSI } from 'styled-string-builder';
 
 console.log(colorizeANSI('Red text', 31));
 console.log(colorizeANSI('Blue background', 44, true));
@@ -217,7 +211,7 @@ Result:
 #### colorize256
 
 ```typescript
-import { colorize256 } from 'styled-string';
+import { colorize256 } from 'styled-string-builder';
 
 console.log(colorize256('Orange text', 208));
 console.log(colorize256('Teal background', 30, true));
@@ -229,7 +223,7 @@ Result:
 #### colorizeRGB
 
 ```typescript
-import { colorizeRGB } from 'styled-string';
+import { colorizeRGB } from 'styled-string-builder';
 
 console.log(colorizeRGB('Custom color text', 100, 150, 200));
 console.log(colorizeRGB('Custom background', 50, 75, 100, true));
@@ -239,7 +233,7 @@ Result:
 - <span style="background-color: rgb(50, 75, 100);">Custom background</span>
 
 ```typescript
-import { applyStyle } from 'styled-string';
+import { applyStyle } from 'styled-string-builder';
 
 console.log(applyStyle('Bold text', 'bold'));
 console.log(applyStyle('Underlined text', 'underline'));
@@ -250,7 +244,7 @@ Result:
 
 ### ANSI color codes
 
-![table with ansi color codes](./assets/ansi.png "ansi color codes")
+![table with ansi color codes](./workdocs/assets/ansi.png "ansi color codes")
 
 ### Social
 

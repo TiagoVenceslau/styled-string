@@ -32,7 +32,7 @@
       "useLongnameInNav": false
     },
     "better-docs": {
-      "name": "Styled String",
+      "name": "Styled String Builder",
       "title": "A Builder approach to String styling for Javascript",
       "hideGenerator": true,
       "useLongnameInNav": false,

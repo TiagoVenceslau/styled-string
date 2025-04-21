@@ -5,7 +5,7 @@
 
 #### Basic Usage
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 
 const styledText = style('Hello, World!').red.bold;
 console.log(styledText.toString());
@@ -19,7 +19,7 @@ Result:
 
 #### Foreground Colors
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 
 console.log(style('Red text').red.toString());
 console.log(style('Green text').green.toString());
@@ -33,7 +33,7 @@ Result:
 
 #### Background Colors
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 console.log(style('Red background').bgRed.toString());
 console.log(style('Green background').bgGreen.toString());
 console.log(style('Blue background').bgBlue.toString());
@@ -46,7 +46,7 @@ Result:
 
 #### Bright Colors
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 console.log(style('Bright red text').brightRed.toString());
 console.log(style('Bright green background').bgBrightGreen.toString());
 ```
@@ -57,7 +57,7 @@ Result:
 
 #### Styles
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 console.log(style('Bold text').bold.toString());
 console.log(style('Italic text').italic.toString());
 console.log(style('Underlined text').underline.toString());
@@ -72,7 +72,7 @@ Result:
 
 #### 256 Color
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 console.log(style('256 color text').color256(100).toString());
 console.log(style('256 color background').bgColor256(200).toString());
 ```
@@ -83,7 +83,7 @@ Result:
 
 #### RGB Color
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 console.log(style('RGB text').rgb(255, 100, 0).toString());
 console.log(style('RGB background').bgRgb(0, 100, 255).toString());
 ```
@@ -94,7 +94,7 @@ Result:
 
 #### Clear Styling
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 const styledText = style('Styled text').red.bold;
 console.log(styledText.clear().toString());
 ```
@@ -104,7 +104,7 @@ Result:
 
 #### Raw ANSI
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 console.log(style('Custom ANSI').raw('\u001b[35m').toString());
 ```
 Result:
@@ -113,7 +113,7 @@ Result:
 
 #### Combinations
 ```typescript
-import { style } from 'styled-string';
+import { style } from 'styled-string-builder';
 // Combining multiple strings
 const combinedText = style('Hello').red.toString() + ' ' + style('World').blue.toString();
 console.log(combinedText);
@@ -165,7 +165,7 @@ Result:
 #### colorizeANSI
 
 ```typescript
-import { colorizeANSI } from 'styled-string';
+import { colorizeANSI } from 'styled-string-builder';
 
 console.log(colorizeANSI('Red text', 31));
 console.log(colorizeANSI('Blue background', 44, true));
@@ -177,7 +177,7 @@ Result:
 #### colorize256
 
 ```typescript
-import { colorize256 } from 'styled-string';
+import { colorize256 } from 'styled-string-builder';
 
 console.log(colorize256('Orange text', 208));
 console.log(colorize256('Teal background', 30, true));
@@ -189,7 +189,7 @@ Result:
 #### colorizeRGB
 
 ```typescript
-import { colorizeRGB } from 'styled-string';
+import { colorizeRGB } from 'styled-string-builder';
 
 console.log(colorizeRGB('Custom color text', 100, 150, 200));
 console.log(colorizeRGB('Custom background', 50, 75, 100, true));
@@ -199,7 +199,7 @@ Result:
 - <span style="background-color: rgb(50, 75, 100);">Custom background</span>
 
 ```typescript
-import { applyStyle } from 'styled-string';
+import { applyStyle } from 'styled-string-builder';
 
 console.log(applyStyle('Bold text', 'bold'));
 console.log(applyStyle('Underlined text', 'underline'));
@@ -210,4 +210,4 @@ Result:
 
 ### ANSI color codes
 
-![table with ansi color codes](./assets/ansi.png "ansi color codes")
+![table with ansi color codes](./workdocs/assets/ansi.png "ansi color codes")
