@@ -1,6 +1,6 @@
 {
   "name": "@tvenceslau/styled-string",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "String Styler class based on a builder design pattern",
   "type": "module",
   "exports": {
