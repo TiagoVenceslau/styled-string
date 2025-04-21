@@ -1,6 +1,6 @@
 {
   "name": "styled-string-builder",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "String Styler class based on a builder design pattern",
   "type": "module",
   "exports": {
