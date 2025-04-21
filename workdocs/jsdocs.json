@@ -33,7 +33,7 @@
     },
     "better-docs": {
       "name": "Styled String",
-      "title": "TypeScript workspace template",
+      "title": "A Builder approach to String styling for Javascript",
       "hideGenerator": true,
       "useLongnameInNav": false,
       "navLinks": [
