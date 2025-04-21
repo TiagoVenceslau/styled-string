@@ -57,9 +57,9 @@
   "author": "Tiago Venceslau",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/decaf-ts/styled-string/issues"
+    "url": "https://github.com/TiagoVenceslau/styled-string/issues"
   },
-  "homepage": "https://github.com/decaf-ts/styled-string#readme",
+  "homepage": "https://github.com/TiagoVenceslau/styled-string#readme",
   "devDependencies": {
     "@eslint/js": "^9.24.0",
     "@stylistic/eslint-plugin": "^4.2.0",
